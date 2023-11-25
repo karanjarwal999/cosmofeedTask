@@ -1,0 +1,43 @@
+.fullNavbar{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+}
+.fullNavbar>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.hyburgerBtn{
+    display:none
+}
+.hyburgerModal{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: lightgray;
+    height: 100%;
+    padding: 20px;
+    width: 200px;
+    text-align: end;
+}
+.hyburgerModal>ul{
+    list-style-type: none;
+    text-align: start;
+    padding-left: 0px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .hyburgerBtn{
+        display:block
+    } 
+    .fullNavbar{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: end;
+        padding: 20px;
+    }
+}
